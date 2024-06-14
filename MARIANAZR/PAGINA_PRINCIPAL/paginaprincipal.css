@@ -1,0 +1,184 @@
+
+header{
+    color: white;
+    grid-area: header;
+    font-size: 70px;
+    font-family:'Pacifico';
+    text-align: left;
+    background-image: url("https://previews.123rf.com/images/puthuchon/puthuchon1310/puthuchon131000207/22732977-tel%C3%B3n-de-fondo-planta-de-hojas.jpg");    
+}
+#ola{
+    width: 100px;
+    height: 100px;
+    position:absolute ;
+    right: 10px;
+}
+#saco{
+    width: 300px;
+    height: 300px;
+    right: 600px;
+    top: 350px;
+    position:absolute ;
+}
+#volun{
+
+    width: 300px;
+    height: 200px;
+    right: 800px;
+    transition: all .2s ease-in-out; 
+    opacity: 0.9;
+}
+#volun:hover { 
+    transform: scale(0.9); 
+    opacity: 1;
+}
+#direc{
+
+    width: 300px;
+    height: 200px;
+    right: 800px;
+transition: all .2s ease-in-out; 
+opacity: 0.9;
+}
+#direc:hover { 
+transform: scale(0.9); 
+opacity: 1;
+}
+#calen{
+    width: 300px;
+    height: 200px;
+    right: 800  px;
+    transition: all .2s ease-in-out; 
+opacity: 0.9;
+}
+#calen:hover { 
+transform: scale(0.9); 
+opacity: 1;
+}
+#contactosimg{
+    width: 100px;
+    height: 100px;
+margin-left:250px; 
+}
+#tierra{
+    width: 100px;
+    height: 100px;
+    position:absolute ;
+    right: 10px;
+    top:600px;
+}
+.boton{
+    background-color: rgb(163, 206, 135);
+    border-radius:  30px;
+    border: 0px;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    padding: 20px 50px;
+    text-decoration: none;
+    position: relative;
+    margin: 32px;
+    transition: all .2s ease-in-out; 
+opacity: 0.9;
+}
+.boton:hover{background: rgb(134, 134, 98);
+    transition: background-color 1s;
+    transform: scale(0.9); 
+    opacity: 1;
+}
+.botonmenu{
+    background-color: rgb(158, 134, 101);
+    border: 0px;;
+    border-radius:  10px;
+    text-align: center;
+    color: rgb(122, 143, 120);
+    font-size: 10px;
+    cursor: pointer;
+    padding: 20px 40px;
+    position: relative;
+    margin: 32px;
+
+}
+.botonmenu:hover{
+    background: rgb(134, 134, 98);
+    transition: background-color 1s;
+
+}
+#tres{
+    background-color: rgb(32, 73, 19) ;
+   grid-area:nav;
+}
+#cuatro{
+   background-color: rgb(103, 133, 43) ;
+   grid-area: s4;
+}
+h1{
+    left:20px;
+    position: relative;
+ }
+
+p{
+    left:20px;
+    position: relative;
+ }
+#cinco{
+    background-color: rgb(22, 90, 22);
+    grid-area: s5;
+    background-image: url("https://i.gifer.com/HAhw.gif");
+    
+ }
+ #seis{
+    background-color: rgb(22, 90, 22);
+    grid-area: s6;
+    
+ }
+ #siete{
+    background-color: rgb(22, 90, 22);
+    grid-area: s7;
+
+ }
+
+ #ocho{
+    background-color: rgb(22, 90, 22);
+    grid-area: s8;
+ }
+
+
+nav{    
+    background-color: rgb(11, 66, 23);
+    grid-area:s3;
+    font-size: 30px;
+    display: "flex";
+}
+ 
+footer{
+    background-color: rgb(64, 97, 56) ;
+    grid-area: pie;
+    
+}
+body{
+    display: grid;
+    grid-template-rows:  100px 100px 530px 200px 100px;
+    grid-template-columns: 15% 20% 20% 20% 25%;
+    grid-template-areas: 
+    "s3 header header header header"
+    "s3 nav nav nav nav "
+    "s3 s4 s4 s4 s5"
+    "s3 s6 s7 s8 s5"
+    "pie pie pie pie pie";
+    gap:4px;
+}
+@media(max-width:800px){
+    body{
+        display: grid;
+        grid-template-rows: 200px 100px 100px 75px;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "s3"
+        "s4"
+        "pie";
+    gap:4px;
+    }
+}

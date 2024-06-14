@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+"width=device-width, initial-scale=1.0"
+>
+    <title>Document</title>
+    
+<style>
+    header{
+    background-color: rgb(87, 117, 87) ;
+    background-image:url(https://images.unsplash.com/photo-1584204559709-ca7d413229eb?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhvamFzJTIwdmVyZGVzfGVufDB8fDB8fHww);
+    grid-area: header;
+    
+    
+}
+nav{
+    background-color: rgb(122, 161, 137) ;
+    grid-area: nav;
+}
+nav { 
+            transition: all .2s ease-in-out; 
+            opacity: 0.9;
+        }
+        .anun:hover { 
+            background-size: 10%; 
+            opacity: 1;
+        }
+#tres{
+    background-color: rgb(88, 122, 98) ;
+   grid-area: s3;
+   border-radius: 10px;
+   margin: 10px;
+}
+#cuatro{
+   background-color: rgb(51, 70, 50) ;
+   grid-area: s4;
+   border-radius: 10px;
+   margin: 10px;
+}
+#cinco{
+    background-color: rgb(58, 78, 66) ;
+    grid-area: s5;
+    border-radius: 10px;
+   margin-bottom: 40px;
+   margin-top: 30px ;
+   margin-left: 20px ;
+   margin-right: 20px;
+ }
+ #seis{
+    background-color: rgb(109, 150, 107) ;
+    grid-area: s6;
+    border-radius: 10px;
+   margin: 10px;
+ }
+ #siete{
+    background-color: rgb(137, 158, 130) ;
+    grid-area: s7;
+    border-radius: 10px;
+   margin: 10px;
+ }
+ #ocho{
+    background-color: rgb(73, 129, 87) ;
+    grid-area: s8;
+    border-radius: 10px;
+   margin: 10px;
+   padding: 20px;
+   padding-left: 50px;
+ }
+
+
+footer{
+    background-color: rgb(77, 100, 84) ;
+    grid-area: pie;
+   
+}
+
+h1
+{
+    color:white;
+}
+body{
+    display: grid;
+    grid-template-rows:  250px 200px 300px 300px 150px  ;
+    grid-template-columns: 5% 65% 30%;
+    grid-template-areas:
+    "nav header header"
+    "nav s3 s4"
+    "nav s5 s6"
+    "nav s7 s8"
+    "pie pie pie";
+    gap:4px;
+}
+
+.anun{
+    width: 200px;
+    border-radius: 100%;
+    padding: 80px;
+    padding-left: 100px;
+}
+.anun { 
+            transition: all .2s ease-in-out; 
+            opacity: 0.9;
+        }
+        .anun:hover { 
+            transform: scale(1.9); 
+            opacity: 1;
+        }
+
+
+        .produ {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 50px;
+    padding-left: 150px;
+  }
+  .produ img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+  }
+
+
+  #monedas  {
+    padding-left: 150px;
+  }
+
+  #respuestas{
+    padding-top: 30px;
+
+  }
+
+  #salidas{
+    background-color: rgba(229, 248, 145, 0.952);
+    background-blend-mode: soft-light;
+    border-radius: 50px;
+  }
+  #salidasdos{
+    background-color: rgba(229, 248, 145, 0.952);
+    background-blend-mode: soft-light;
+    border-radius: 50px;
+  }
+  #salidastres{
+    background-color: rgba(229, 248, 145, 0.952);
+    background-blend-mode: soft-light;
+    border-radius: 50px;
+  }
+  #salidascuatro{
+    background-color: rgba(229, 248, 145, 0.952);
+    background-blend-mode: soft-light;
+    border-radius: 50px;
+  }
+ 
+@media(max-width:1200px){
+    body{
+        display: grid;
+        grid-template-rows: 200px 150px 150px 150px 200px 150px 200px 100px  ;
+        grid-template-columns: 10% 90% ;
+        grid-template-areas:
+        "nav header"
+        "nav s3"
+        "nav s4"
+        "nav s5"
+        "nav s6"
+        "nav s7"
+        "nav s8"
+        "pie pie";
+    gap:4px;
+    }
+
+
+    #logo{
+        position:relative;
+    }
+    #monedas{
+        width: 60px;
+        height: 60px;
+    }
+    #respuestas{
+    padding-top: 0px;
+
+  }
+  .produ{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+
+  }
+
+  .anun {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 5%;
+    padding-left: 100px;
+  }
+
+}
+    </style>
+</head>
+
+<body>
+ 
+    <header>UNA SOLA FUERZA
+        <p>Cerrar Sesion</p>
+    </header>
+
+    <nav id="nav">HUK kALLPALLA
+
+
+    <img id="logo"src="https://cdn1.vc4a.com/media/2022/06/HUKLOGO_000001-1-150x150.png" with="95px"height="95px">
+<div >
+    <a id="salidas" href="Inicio.php">Inicio</a><br><br>
+    <a id="salidasdos" href="Productos.php">Productos</a><br><br>
+    <a id="salidastres" href="Mi carrito.php">Mi carrito</a><br><br>
+    <a id="salidascuatro" href="Salir.php">Salir</a><br>
+</div>
+    </nav>
+
+
+
+
+    <section id="tres"> <h2 id="tres">Solicitar Colaboracion</h2>
+        <form id=" formsoli">
+         [Nombre de usuario ]solicita: <input type="text" name="solicitud"><br>
+         <input type="submit" name="Enviar" value="Enviar">
+        </form>
+    </section>
+
+
+
+   <section id="cuatro">
+        <p><strong>Monedas:</strong>[monedas de la base de datos] </p> <img id="monedas" src= "https://img.freepik.com/vector-premium/moneda-oro-dinero-dibujos-animados-vector-ilustracion-objeto-aislado_311865-9355.jpg" with="95px"height="95px">
+   </section>
+
+
+
+    <section id="cinco">
+        <form id="respuestas">
+        <a  href="lista del chat ">Resùestas de la empresa</a>
+    </form>
+    </section>
+
+
+
+   <section id="seis">
+        <h2 >Mis Productos:</h2>
+        <img class="produ"src="https://www.editorialderiego.com/wp-content/uploads/2024/01/Zanahoria_03.jpeg" with="95px"height="95px" style="display: block;">
+        <img class="produ" src="https://previews.123rf.com/images/lddesign/lddesign2003/lddesign200300001/141390708-icono-de-dibujos-animados-de-ilustraci%C3%B3n-de-vector-de-hongo.jpg"style="display: none;">
+        <img class="produ" src="https://e7.pngegg.com/pngimages/952/1012/png-clipart-leaf-free-content-computer-icons-cartoon-leaves-computer-presentation.png"style="display: none;">
+
+        
+        <script>
+            var imagenes = document.querySelectorAll('#seis img');
+      var indiceActual = 0;
+    
+      function cambiarImagen() {
+        imagenes[indiceActual].style.display = 'none';
+        indiceActual = (indiceActual + 1) % imagenes.length; // cual imagen cambia 
+        imagenes[indiceActual].style.display = 'block';
+      }
+    
+      setInterval(cambiarImagen, 5000); // cada cuanto cambia la imagen cada 5 segundos
+        </script>
+   
+   
+   
+    </section>
+
+
+
+   <section id="siete">
+    <img class="anun" id="imguno"  src="https://www.shutterstock.com/image-photo/coconut-coir-compost-sustanable-potting-600nw-2138450407.jpg" >
+    <img class="anun" id="imgdos"  src="https://www.shutterstock.com/image-photo/young-adult-woman-palm-holding-260nw-2052487061.jpg">
+    <img class="anun" id="imgtres"  src="https://media.istockphoto.com/id/479440915/es/foto/abono-con-composted-tierra.jpg?s=612x612&w=0&k=20&c=jK6P_XmKXKlvxuj9BJdTqonujwnvSCHRP2mgjVQh0w0=">
+
+
+    
+   </section>
+
+
+
+
+   <section id="ocho">
+   <h2 id="ocho">Invitar a más amigos</h2>:
+    <a href="https://www.facebook.com/profile.php?id=100082664563167&locale=es_LA">@huk kALLPALLA </a><a href="https://www.instagram.com/hukallpalla.bo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@instagram</a>
+   <br> copiar link : "link de huk kALLPALLA "
+
+</section>
+<footer>Contactanos</footer>
+
+
+
+<header>
+<h1>UNA SOLA FUERZA</h1>
+</herder>
+</body>
+</html>
