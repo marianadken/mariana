@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+    background:rgb(0, 0, 0);
+    grid-area: hea;
+    background-image:url("https://images.unsplash.com/photo-1584204559709-ca7d413229eb?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhvamFzJTIwdmVyZGVzfGVufDB8fDB8fHww");
+}
+nav{
+    background: rgb(11, 80, 11);
+    grid-area: na;
+}
+#uno{
+    background: rgba(16, 70, 17, 0.623);
+    grid-area: s1;
+}
+#dos{
+    background: rgba(2, 46, 2, 0.795);
+    grid-area: s2;
+
+}
+#tres{
+    background: rgba(28, 66, 28, 0.342);
+    grid-area: s3;
+
+}
+footer{
+    background: rgb(11, 80, 11);
+    grid-area: pie;
+}
+body{
+    display: grid;
+    grid-template-rows: 180px 620px 620px 100px;
+    grid-template-columns: 10% 45% 45%;
+    grid-template-areas:
+    "na hea hea"
+    "na s1 s1"
+    "na s2 s3"
+    "na pie pie"
+    ;
+    gap: 4px;
+}
+@media(max-width:800px){
+    body{
+        display: grid;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "hea"
+    "na"
+    "s1"
+    "s2"
+    "s3"
+    "pie";
+    gap: 4px;
+    }
+    nav{
+        background: rgb(0, 255, 55);
+    }
+    
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#fff;
+    font-weight: 200;
+}
+
+#mensaje{
+    position: relative;
+    bottom: -200px;
+}
+#abono{
+    position: relative;
+    bottom: -200px;
+}
+#solsol{
+    position: relative;
+    top: 0px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#compo{
+    position: relative;
+    top:110px;
+}
+#contactos{
+    width: 100px;
+    height: 100px;
+margin-left:250px; 
+}
+.container{
+    width: 100%;
+    display: flex;
+    max-width:1100px;
+}
+.card{
+    width: 100%;
+    margin:20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #947b4c;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition:all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4) ;
+    transform: translateY(-3%);
+}
+.card img{
+    width:100%;
+    height: 210px;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p{
+    line-height: 1.5;
+    color: black;
+}
+.card .contenido h3{
+font-weight: 200;
+margin-bottom: 20px;
+}
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    background: rgb(82, 32, 12);
+    color:#ffffff;
+    border: 1px solid #c7965e;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.card .contenido a:hover{
+    background: yellowgreen;
+    color: #fff;
+}
+.main{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    text-align: center;
+    
+}
+.menu{
+  height: 900%;
+  width: 140px;
+  position: fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color: #165316;
+  overflow-x:hidden;
+  padding-top: 20px;
+}
+.menu a{
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display:block;
+    text-align: justify;
+}
+.menu a:hover{
+    color: #12530c;
+    font-weight: 400;
+    background-color: yellowgreen;
+    border-radius: 50px;
+}
+.muenu i{
+    margin-left: 5px;
+}
+.img-calen{
+    width: 500px;
+    height: 500px;
+    display: flex;
+}
+.slider{
+    width:500px;
+    margin:auto;
+    overflow: hidden;
+    border: 10px;
+
+}
+.slider ul{
+    display: flex;
+    padding:0;
+    width: 400%;
+    animation: slide 16s infinite alternate;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes slide{
+    0%{margin-left:0%;}
+    20%{margin-left:0%;}
+    
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+
+    75%{margin-left:-300%;}
+    95%{margin-left:-300%;}
+}
+    </style>
+</head>
+<body>
+<header>
+    <h1>HUK KALLPALLA</h1>
+</header>
+<nav class="menu">
+    <center><img src="https://cdn1.vc4a.com/media/2022/06/HUKLOGO_000001-1-150x150.png" width="130px" height= "130px"></center>
+    <a href="#"><i class="bx bx-home"Mi perfil></i>INICIO</a>
+    <a href="#"><i class="bx bx-briefcase"Mi perfil></i>MI PERFIL</a>
+    <a href="#"><i class="bx bx-group"Mi perfil></i>CONTACTOS</a>
+    <a href="#"><i class="bx bx-contact"Mi perfil></i>CLIENTES</a>
+</nav>/.menu 
+
+<section id="uno">
+<h2 id="solsol">SOLICITUDES DE COLABORACIONES EMPRESARIALES</h2>
+<div class="container">
+    <div class="card">
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsfSP18H1HPY8pG2bqMXA7g5XgZx3crdPKV2MoatYYWcqHQfDBZTg474N9jfDZStYJNJ0&usqp=CAU">
+        </figure>
+        <div class="contenido">
+           <h3>NUEVA SOLICITUD</h3>
+           <p>Acepta a este usuraio que te ha enviado una solicitud de intecambio</p>
+           <a href="aceptar.html">ACEPTAR</a> 
+        </div>
+    </div>
+<div class="card">
+    <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsTztcqy9z5Ix5erQ2Mk15OFmv7W79UokpsMsf2wwitZSE0zKF0dM49LKsQq29mHeolGQ&usqp=CAU">
+    </figure>
+    <div class="contenido">
+       <h3>NUEVA SOLICITUD</h3>
+       <p>Elimina a este usuario que te ha enviado una solicitud de intecambio</p>
+       <a href="eliminar.html">ELIMINAR</a> 
+    </div>
+</div>
+    <div class="card">
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2e2JQUhQEDesPNWDDt2hDScQxmYVIOhfqomAtjEQlFtP_pWSkWtWy_XuHn7INfNCwFeM&usqp=CAU">
+        </figure>
+        <div class="contenido">
+           <h3>NUEVA SOLICITUD</h3>
+           <p>Responde a este usuario que te ha enviado una solicitud de intecambio</p>
+           <a href="responder.html">RESPONDER</a> 
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="dos">
+    <center> <h2 id="calcal">EDITAR CALENDARIO</h2> </center>
+   <center> <a href="calendario.html" id="cal">
+        <img src="calend.png" class="img-calen"> </center>
+    </a>
+</section>
+
+<section id="tres">
+ <h2 id="volvol">VOLUNTARIADOS</h2> <input type="date" name="day">
+    <div class="slider">
+        <ul>
+            <li><img src="https://i0.wp.com/valoragregado.net/wp-content/uploads/2023/04/valor-agregado_HUK-Kallpalla-portada-20042023.jpg" width="500px" height="500px"></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS28Azlrl8i5dFkNDIFaIIl-yHFV28nbOZhTg&s"width="500px" height="500px"></li>
+            <li><img src="voli.png"width="500px" height="500px"></li>
+            <li><img src="ftgrup.png"width="500px" height="500px"></li>
+        </ul>
+    </div>
+</section>
+<footer>
+    <a href="https://www.instagram.com/hukallpalla.bo/" id="insta">
+            <img src="insta.png" width="50px" height="50px"></a>
+        <a href="https://www.facebook.com/Hukallpalla.bo/" id="face">
+            <img src="face.png"  width="50px" height="50px"></a>
+        <a href="#" id="correo" >
+            <img src="mail.png"  width="50px" height="50px"></a>
+     <a href="#" id="whats">
+            <img src="whats.png"  width="50px" height="50px"></a>
+    </footer>
+
+
+</body>
+</html>
+
